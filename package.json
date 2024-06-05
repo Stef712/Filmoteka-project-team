@@ -18,12 +18,18 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "@vimeo/player": "^2.18.0",
+    "axios": "^1.6.8",
+    "flatpickr": "^4.6.13",
+    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
-    "notiflix": "^3.2.6",
-    "slim-select": "^2.5.0"
+    "notiflix": "^3.2.7",
+    "simplelightbox": "^2.12.1",
+    "slim-select": "^2.8.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
