@@ -20,7 +20,7 @@ for (var i = 0; i < images.length; i++) {
   images[i].addEventListener('click', openModal);
 }
 
-span.onclick = function () {
+span.onclick = function () { 
   modal.style.display = 'none';
 };
 
