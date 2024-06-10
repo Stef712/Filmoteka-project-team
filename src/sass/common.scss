@@ -1,1 +1,31 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  background-color: var(--FFF);
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
