@@ -1,0 +1,39 @@
+.footer-paragraph-one {
+  color: #545454;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.footer-paragraph-two {
+  color: #545454;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  white-space: nowrap;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.link {
+  text-decoration: none;
+}
+.footer-div {
+  padding: 29px 399px;
+  margin-top: 60px;
+  background: #f7f7f7;
+  width: auto;
+  height: 77px;
+  width: 1280px;
+}
