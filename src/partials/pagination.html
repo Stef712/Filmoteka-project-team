@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/pagination.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="pagination">
+        <button class="btn1" onclick="backBtn()">
+          <svg class ="svg"xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M12.6667 8H3.33334" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.00001 12.6666L3.33334 7.99998L8.00001 3.33331" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </svg>
+        </button>
+        <ul>
+          <li class="link active" value="1" onclick="activeLink()">1</li>
+          <li class="link" value="2" onclick="activeLink()">2</li>
+          <li class="link" value="3" onclick="activeLink()">3</li>
+          <li class="link" value="4" onclick="activeLink()">4</li>
+          <li class="link" value="5" onclick="activeLink()">5</li>
+          <li class="link" value="6" onclick="activeLink()">6</li>
+          <li class="link" value="7" onclick="activeLink()">7</li>
+          <li class="link" value="8" onclick="activeLink()">8</li>
+          <li class="link" value="9" onclick="activeLink()">9</li>
+        </ul>
+        <button class="btn2" onclick="nextBtn()">
+          <svg class="svg"xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M12.6667 8H3.33334" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.00001 12.6666L3.33334 7.99998L8.00001 3.33331" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </svg>
+        </button>
+      </div>
+    <script src="./js/pagination.js"></script>
+  </body>
+</html>
