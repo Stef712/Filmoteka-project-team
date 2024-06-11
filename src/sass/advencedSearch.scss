@@ -1,0 +1,90 @@
+.menu-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  max-width: 163px;
+  &:hover .genres-menu__select {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.genres-menu {
+  position: relative;
+  display: inline-block;
+  &__btn {
+    background: getColor('button-color');
+    color: getColor('basic-color');
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  &:hover .genres-menu__btn {
+    background: getColor('menu-holder');
+  }
+
+  &__select {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 135px;
+    gap: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    &:hover {
+      display: block;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__clear {
+    background: getColor('button-color');
+    color: getColor('basic-color');
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    &:hover {
+      background: getColor('menu-holder');
+    }
+  }
+}
+.genre {
+  color: getColor('bgd-dark');
+  padding: 5px 2px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid getColor('button-color');
+  display: block;
+  &:hover {
+    background: getColor('button-color');
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.focused-genre {
+  background: getColor('button-color');
+}
+
+@media screen and (min-width: 1024px) {
+  .genres-menu {
+    &__btn {
+      padding: 16px;
+      font-size: 16px;
+    }
+    &__select {
+      min-width: 160px;
+    }
+  }
+  .genre {
+    padding: 5px 2px;
+    font-size: 16px;
+  }
+}
