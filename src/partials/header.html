@@ -1,68 +1,80 @@
-<header>
-  <div class="container">
-    <img
-      class="abstract-background-image"
-      src="./images/abstract-background-with-red-lines 1.png"
-      alt="abstract-background-with-red-lines"
-      width="1216"
-    />
-    <nav>
-      <ul class="list-header-buttons flex">
-        <div class="div-one-buttons flex">
-          <li class="link search-bar-li">
-            <div class="search-bar-div">
-              <form class="search-form">
-                <input
-                  type="text"
-                  class="search-input"
-                  placeholder="Movie search"
-                />
-              </form>
-              <svg
-                class="search-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.9996 13.9996L11.0996 11.0996"
-                  stroke="black"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </li>
-          <li class="link">
-            <button class="home-button" type="button">Home</button>
-          </li>
-          <li class="link">
-            <button class="my-library-button" type="button">My Library</button>
-          </li>
-        </div>
-        <div class="div-two-buttons flex">
-          <li class="link">
-            <button class="watched-button" type="button">Watched</button>
-          </li>
-          <li class="link">
-            <button class="queue-button" type="button">Queue</button>
-          </li>
-        </div>
+<header class="header-home">
+  <div class="header-content-container">
+    <nav class="site-navigation">
+      <form class="search-form">
+        <input
+          id="searchInput"
+          type="text"
+          class="search-form-input"
+          name="searchQuery"
+          placeholder="Movie Search"
+          aria-label="movie search"
+          autocomplete="off"
+        />
+        <button type="submit" class="submit-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <ul class="site-nav-list">
+        <li class="site-nav-item">
+          <a
+            href="./index.html"
+            class="site-nav-button home-btn"
+            data-request="Home"
+            aria-label="home"
+          >
+            Home
+          </a>
+        </li>
+        <li class="site-nav-item my-library-btn">
+          <a
+            class="site-nav-button"
+            data-request="library"
+            aria-label="my library"
+          >
+            My library
+          </a>
+        </li>
+      </ul>
+
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round">
+            <i id="moonIcon" class="fas fa-moon theme-icon"></i>
+            <i id="sunIcon" class="fas fa-sun theme-icon"></i>
+          </div>
+        </label>
+      </div>
+
+      <ul class="watched-queue-container">
+        <li>
+          <a
+            class="site-nav-button watched-btn"
+            data-request="watched"
+            aria-label="watched"
+            data-action="watch"
+          >
+            Watched
+          </a>
+        </li>
+        <li>
+          <a
+            class="site-nav-button queue-btn"
+            data-request="queue"
+            aria-label="queue"
+            data-action="queue"
+          >
+            queue
+          </a>
+        </li>
       </ul>
     </nav>
-    <div class="header-div-icon-title">
-      <svg class="icon-film-svg" width="59" height="59">
-        <use href="./images/icons defs.svg#icon-film"></use>
-      </svg>
-      <h2 class="filmoteka-title">Filmoteka</h2>
+
+    <div class="logo-container">
+      <a href="./index.html"><i class="fas fa-film film-icon"></i></a>
+      <a href="./index.html"><h1 class="title">Filmoteka</h1></a>
     </div>
   </div>
 </header>

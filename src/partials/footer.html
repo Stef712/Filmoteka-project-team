@@ -1,26 +1,235 @@
 <footer>
-  <div class="footer-div">
-    <ul class="list">
-      <li class="link">
-        <p class="footer-paragraph-one">
-          © 2023 | All Rights Reserved | Developed with
-        </p>
-      </li>
-      <li class="link">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-        >
-          <path
-            d="M7 12.88L6.02 11.9C2.38 8.68 0 6.51 0 3.85C0 1.68 1.68 0 3.85 0C5.04 0 6.23 0.56 7 1.47C7.77 0.56 8.96 0 10.15 0C12.32 0 14 1.68 14 3.85C14 6.51 11.62 8.68 7.98 11.9L7 12.88Z"
-            fill="#B92F2C"
-          />
-        </svg>
-      </li>
-      <li class="link"><p class="footer-paragraph-two">by GoIT Students</p></li>
-    </ul>
+  <div class="footer-container">
+    <p class="rights-reserved">
+      © <span id="current-year"></span> | All Rights Reserved | Developed with
+    </p>
+    <div class="text-direction">
+      <svg class="heart">
+        <use href="./icons/symbol-defs.svg#icon-heart"></use>
+      </svg>
+
+      <p class="students" id="openFooterModal">by GoIT Students</p>
+      <div id="myFooterModal" class="footer-modal">
+        <div class="footer-modal-content">
+          <div class="title-btn-container">
+            <h3 class="footer-modal-title">The project was made by:</h3>
+            <button type="button" class="close-button-member">
+              <svg class="close-icon-member">
+                <use href="./icons/symbol-defs.svg#icon-x-circle"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="group-section">
+            <li class="member-section">
+              <picture class="edit-img">
+                <source
+                  media="(min-width:1280px)"
+                  srcset="
+                    ./images/melissa.img.jpg 1x,
+                    ./images/melissa.img.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/melissa.img.jpg 1x,
+                    ./images/melissa.img.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:320px)"
+                  srcset="
+                    ./images/melissa.img.jpg 1x,
+                    ./images/melissa.img.jpg 2x
+                  "
+                />
+                <img
+                  class="last-image"
+                  src="./images/melissa.img.jpg"
+                  alt="melissa"
+                />
+              </picture>
+              <section class="member-title1">
+                <h4 class="member-name">Melisa Ionela Vasilica</h4>
+                <span class="member-description">
+                  Team Leader, Frontend Developer</span
+                >
+              </section>
+              <ul class="member-links">
+                <li class="social-links">
+                  <a href="https://github.com/Melissa066">
+                    <svg>
+                      <use href="./icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="member-section">
+              <picture class="edit-img">
+                <source
+                  media="(min-width:1280px)"
+                  srcset="./images/gabi2.jpg 1x, ./images/gabi2.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/gabi2.jpg 1x, ./images/gabi2.jpg 2x"
+                />
+                <source
+                  media="(max-width:320px)"
+                  srcset="./images/gabi2.jpg 1x, ./images/gabi2.jpg 2x"
+                />
+                <img class="last-image" src="./images/gabi2.jpg" alt="gabi" />
+              </picture>
+              <section class="member-title1">
+                <h4 class="member-name">Gabriel Grigoras</h4>
+                <span class="member-description">
+                  Scrum Master, Frontend Developer</span
+                >
+              </section>
+              <ul class="member-links">
+                <li class="social-links">
+                  <a href="https://github.com/gabrielg-goit">
+                    <svg>
+                      <use href="./icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="member-section">
+              <picture class="edit-img1">
+                <source
+                  media="(min-width:1280px)"
+                  srcset="./images/rebecca.jpg 1x, ./images/rebecca.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/rebecca.jpg 1x, ./images/rebecca.jpg 2x"
+                />
+                <source
+                  media="(max-width:320px)"
+                  srcset="./images/rebecca.jpg 1x, ./images/rebecca.jpg 2x"
+                />
+                <img
+                  class="last-image"
+                  src="./images/rebecca.jpg"
+                  alt="Rebeca"
+                />
+              </picture>
+              <section class="member-title">
+                <h4 class="member-name">Rebeca Batir</h4>
+                <span class="member-description">Frontend Developer</span>
+              </section>
+              <ul class="member-links">
+                <li class="social-links">
+                  <a href="https://github.com/rebecab27">
+                    <svg>
+                      <use href="./icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="member-section">
+              <picture class="edit-img1">
+                <source
+                  media="(min-width:1280px)"
+                  srcset="images/cristina.png 1x, images/cristina.png 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/cristina.png 1x, images/cristina.png 2x"
+                />
+                <source
+                  media="(max-width:320px)"
+                  srcset="images/cristina.png 1x, images/cristina.png 2x"
+                />
+                <img
+                  class="last-image"
+                  src="images/cristina.png"
+                  alt="cristina"
+                />
+              </picture>
+              <section class="member-title">
+                <h4 class="member-name">Cristina Ilicea</h4>
+                <span class="member-description"> Frontend Developer</span>
+              </section>
+              <ul class="member-links">
+                <li class="social-links">
+                  <a href="https://github.com/CristinaIlicea">
+                    <svg>
+                      <use href="./icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="member-section">
+              <picture class="edit-img1">
+                <source
+                  media="(min-width:1280px)"
+                  srcset="images/dani.jpg 1x, images/dani.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/dani.jpg 1x, images/dani.jpg 2x"
+                />
+                <source
+                  media="(max-width:320px)"
+                  srcset="images/dani.jpg 1x, images/dani.jpg 2x"
+                />
+                <img class="last-image" src="images/dani.jpg" alt="dani" />
+              </picture>
+              <section class="member-title">
+                <h4 class="member-name">Daniel Batir</h4>
+                <span class="member-description">Frontend Developer</span>
+              </section>
+              <ul class="member-links">
+                <li class="social-links">
+                  <a href="https://github.com/danibatir">
+                    <svg>
+                      <use href="./icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="member-section">
+              <picture class="edit-img1">
+                <source
+                  media="(min-width:1280px)"
+                  srcset="images/stefan.jpg 1x, images/stefan.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/stefan.jpg 1x, images/stefan.jpg 2x"
+                />
+                <source
+                  media="(max-width:320px)"
+                  srcset="images/stefan.jpg 1x, images/stefan.jpg 2x"
+                />
+                <img class="last-image" src="images/stefan.jpg" alt="stefan" />
+              </picture>
+              <section class="member-title">
+                <h4 class="member-name">Stefan Sfarghiu Vasile</h4>
+                <span class="member-description"> Frontend Developer</span>
+              </section>
+              <ul class="member-links">
+                <li class="social-links">
+                  <a href="https://github.com/Stef712">
+                    <svg>
+                      <use href="./icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>

@@ -1,198 +1,279 @@
-:root {
-}
-
 * {
   margin: 0;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--color-p-body);
-  background-color: var(--white-color);
-}
-
-.list-header-buttons {
-  list-style: none;
-  display: flex;
   padding: 0;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  gap: 10px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
-.link {
+
+ul {
+  list-style: none;
+}
+div a {
   text-decoration: none;
 }
 
-.home-button {
+.watched-queue-container .site-nav-button {
+  display: none;
+}
+.header-home {
+  background-repeat: no-repeat;
+  background-image: url('./images/background-header-1x-m.png');
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 460px;
   display: flex;
-  padding: 14px 32px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 100px;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-  border: 1px solid black;
+  padding: 14px;
+  background-color: rgb(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.header-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 320px;
+  min-width: 280px;
+  margin: 20px auto;
+  padding: 0;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-home {
+    background-image: url('./images/background-header-2x-m.png');
+  }
 }
 
-.my-library-button {
+.site-navigation {
   display: flex;
-  padding: 14px 24px;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.site-nav-list,
+.watched-queue-container {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+.site-nav-button {
+  padding: 10px 26px;
   border-radius: 100px;
-  background: #fff;
+  background-color: #fff;
+  border: 1px solid #b92f2c;
   color: #000;
   text-align: center;
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
-  white-space: nowrap;
-  border: 1px solid white;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.watched-button {
-  display: flex;
-  padding: 14px 32px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 100px;
-  background: #b92f2c;
-  box-shadow: 0px 0px 7px 0px rgba(27, 27, 27, 0.15);
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-  border: 1px solid #b92f2c;
-}
-
-.queue-button {
-  display: flex;
-  padding: 14px 24px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 100px;
-  background: #fff;
+.site-nav-button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
   color: #b92f2c;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-  border: 1px solid white;
+  text-decoration: underline;
 }
 
-.abstract-background-image {
-  width: 1216px;
-  height: 316px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: linear-gradient(
-      274deg,
-      rgba(0, 0, 0, 0.49) -2.09%,
-      rgba(0, 0, 0, 0) 99.83%
-    ),
-    url('../images/abstract-background-with-red-lines 1.png') lightgray 0px -194px /
-      100% 216.456% no-repeat;
+.watched-queue-container {
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
-
-.icon-film-svg {
-  width: 59px;
-  height: 59px;
-  flex-shrink: 0;
+.search-form-input {
+  border-radius: 100px;
+  outline: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: 5px 10px;
+  padding-right: 0;
+  padding-right: 20px;
   color: #fff;
-}
-
-.filmoteka-title {
-  color: #ffffff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 64px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
-}
-
-.header-div-icon-title {
-  position: absolute;
-  bottom: -32px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: #fff;
-  margin-bottom: 32px;
-  margin-left: 32px;
-}
-
-.container {
-  width: auto;
-  margin: 0 auto;
-  padding: 32px 32px;
-  height: 316px;
+  font-size: 20px;
   position: relative;
+  z-index: 2;
 }
-
-.flex {
-  display: flex;
+.submit-btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  left: 245px;
+  z-index: 10;
 }
-
-.div-one-buttons {
-  gap: 8px;
-  margin-right: 540px;
+.search-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
-
-.div-two-buttons {
-  gap: 8px;
+.search-form-input::placeholder:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+.search-form-input:focus {
+  background-color: #000;
+}
+.search-input-container {
+  position: relative;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
 }
 
 .search-form {
   display: flex;
   align-items: center;
+  width: 250px;
+  align-self: center;
+  justify-content: center;
+}
+.fa-search {
+  font-size: 25px;
+  line-height: 25px;
+  color: #fff;
+  vertical-align: middle;
+  cursor: pointer;
+  right: 0;
 }
 
-.search-input {
-  width: 165px;
-  height: 38px;
-  border-radius: 100px;
-  background: #fff;
-  color: #000;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 0 15px;
-  border: 2px solid white;
-}
-
-.search-input::placeholder {
-  color: #000;
-}
-
-.search-bar-div {
+.logo-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
 }
-.search-svg {
-  margin-left: -32px;
-  margin-top: 10px;
+.logo-container a .title {
+  margin: 0;
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+.film-icon {
+  font-size: 40px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.theme-switch-wrapper {
+  margin-bottom: 10px;
 }
 
-.search-bar-li {
-  margin-right: 16px;
+// mobile
+
+@media (max-width: 768px) {
+  .site-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .site-nav-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+//  tablet
+@media (min-width: 768px) {
+  .header-home {
+    background-repeat: no-repeat;
+    background-image: url('./images/background-header-1x-t.png');
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-home {
+      background-image: url('./images/background-header-2x-t.png');
+    }
+  }
+  .header-content-container {
+    min-width: 704px;
+  }
+  .site-nav-button {
+    padding: 15px 36px;
+    font-size: 16px;
+  }
+
+  .search-form-input {
+    padding: 5px 10px;
+    padding-right: 0;
+    font-size: 28px;
+  }
+  .watched-queue-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .search-form {
+    width: 320px;
+    align-self: flex-start;
+    margin-left: 15px;
+  }
+  .submit-btn {
+    left: 300px;
+    z-index: 2;
+  }
+  .fa-search {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .logo-container {
+    gap: 20px;
+  }
+  .logo-container a .title {
+    font-size: 60px;
+  }
+  .film-icon {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-home {
+    background-image: url('./images/background-header-1x-d.png');
+    padding: 25px 0;
+    justify-content: space-between;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-home {
+      background-image: url('./images/background-header-2x-d.png');
+    }
+  }
+  .header-content-container {
+    min-width: 1260px;
+  }
+  .fa-search {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .logo-container a .title {
+    font-size: 80px;
+  }
+  .film-icon {
+    font-size: 100px;
+  }
+  .search-form {
+    margin-left: 21px;
+  }
+  .search-form-input {
+    padding: 10px;
+  }
 }
