@@ -47,8 +47,6 @@ div a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
 }
 .site-nav-list,
 .watched-queue-container {
@@ -220,10 +218,8 @@ div a {
   .search-form {
     width: 320px;
     align-self: flex-start;
-    margin-left: 15px;
   }
   .submit-btn {
-    left: 300px;
     z-index: 2;
   }
   .fa-search {
@@ -245,7 +241,6 @@ div a {
 @media (min-width: 1280px) {
   .header-home {
     background-image: url('./images/background-header-1x-d.png');
-    padding: 25px 0;
     justify-content: space-between;
   }
 
@@ -271,7 +266,7 @@ div a {
     font-size: 100px;
   }
   .search-form {
-    margin-left: 21px;
+    align-self: flex-start;
   }
   .search-form-input {
     padding: 10px;
