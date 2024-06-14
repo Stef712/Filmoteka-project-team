@@ -184,9 +184,10 @@ div a {
 //  tablet
 @media screen and (768px <= width <= 1279px ) {
   .header-home {
-    background-image: url('./images/background-header-1x-d.png');
+    background-image: url('./images/background-header-2x-t.png');
     justify-content: space-between;
-    max-height: 316px;
+    max-height: 222px;
+    width: 100%;
   }
   .site-navigation{
     gap: 20px;
@@ -196,21 +197,40 @@ div a {
     align-items: center;
     max-width: 100%;
   }
+  .site-nav-list{
+    max-height: 100%;
+  }
+  .site-nav-button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .logo-container a .title {
+    font-size: 40px;
+  }
+  .film-icon {
+    font-size: 50px;
+  }
 
+  
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header-home {
       background-image: url('./images/background-header-2x-t.png');
+      justify-content: space-between;
+      max-height: 222px;
+      width: 100%;
     }
   }
   .header-content-container {
     min-width: 704px;
+    width: 100%;
   }
   .site-nav-button {
-    padding: 15px 36px;
-    font-size: 16px;
+    font-size: 12px;
+    padding: 8px 20px;
+
   }
 
   .watched-queue-container {
@@ -223,12 +243,7 @@ div a {
   .logo-container {
     gap: 20px;
   }
-  .logo-container a .title {
-    font-size: 60px;
-  }
-  .film-icon {
-    font-size: 80px;
-  }
+
 }
 
 @media (min-width: 1280px) {
