@@ -184,10 +184,20 @@ div a {
 //  tablet
 @media screen and (768px <= width <= 1279px ) {
   .header-home {
-    background-repeat: no-repeat;
-    background-image: url('./images/background-header-1x-t.png');
-    background-size: cover;
+    background-image: url('./images/background-header-1x-d.png');
+    justify-content: space-between;
+    max-height: 316px;
   }
+  .site-navigation{
+    gap: 20px;
+  }
+  .theme-switch.theme-switch-wrapper{
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100%;
+  }
+
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -203,26 +213,12 @@ div a {
     font-size: 16px;
   }
 
-  .search-form-input {
-    padding: 5px 10px;
-    padding-right: 0;
-    font-size: 28px;
-  }
   .watched-queue-container {
     flex-direction: row;
     justify-content: center;
   }
-  .search-form {
-    width: 320px;
-    align-self: flex-start;
-  }
-  .submit-btn {
-    z-index: 2;
-  }
-  .fa-search {
-    font-size: 35px;
-    line-height: 35px;
-  }
+
+
 
   .logo-container {
     gap: 20px;
