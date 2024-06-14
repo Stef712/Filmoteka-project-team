@@ -166,9 +166,6 @@ div a {
   color: #fff;
   flex-shrink: 0;
 }
-.theme-switch-wrapper {
-  margin-bottom: 10px;
-}
 
 // mobile
 
@@ -247,8 +244,9 @@ div a {
   .site-navigation{
     gap: 20px;
   }
-  .theme-switch{
-    justify-content: center;
+  .theme-switch.theme-switch-wrapper{
+    justify-content: flex-end;
+    align-items: center;
     max-width: 100%;
   }
 
