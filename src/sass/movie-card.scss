@@ -15,7 +15,6 @@
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 32px;
   height: 100%;
   background-color: #fff;
 }
@@ -41,7 +40,7 @@
   grid-template-columns: 1fr;
   gap: 20px;
   justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
   background-color: var(--background-color-light);
   background-color: #fff;
 }
@@ -133,7 +132,9 @@
 @media (min-width: 1280px) {
   .movie-wrapper {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1280px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .movie-wrapper__info {
     font-size: 20px;
@@ -146,9 +147,7 @@
     max-width: 100%;
   }
 
-  .movie-wrapper__card {
-    width: 295px;
-  }
+
   .queue,
   .watched {
     grid-template-columns: repeat(4, 1fr);
