@@ -26,6 +26,7 @@ div a {
   padding: 14px;
   background-color: rgb(0, 0, 0, 0.8);
   overflow: hidden;
+  border-radius: 10px;
 }
 .header-content-container {
   position: relative;
@@ -96,7 +97,7 @@ div a {
   padding-right: 20px;
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
   z-index: 2;
 }
@@ -185,7 +186,7 @@ div a {
 }
 
 //  tablet
-@media (min-width: 768px) {
+@media screen and (768px <= width <= 1280px ) {
   .header-home {
     background-repeat: no-repeat;
     background-image: url('./images/background-header-1x-t.png');
@@ -242,6 +243,13 @@ div a {
   .header-home {
     background-image: url('./images/background-header-1x-d.png');
     justify-content: space-between;
+  }
+  .site-navigation{
+    gap: 20px;
+  }
+  .theme-switch{
+    justify-content: center;
+    max-width: 100%;
   }
 
   @media (min-device-pixel-ratio: 2),
