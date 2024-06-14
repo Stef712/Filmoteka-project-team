@@ -107,11 +107,32 @@
 
 // mobile
 
-// tablet
+//  tablet
+@media screen and (768px <= width <= 1279px ){
+  .movie-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1279px;
+  }
+  .movie-wrapper__info {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .movie-wrapper__card-img img {
+    width: 336px;
+    height: auto;
+  }
+
+  .movie-wrapper__card {
+    width: 336px;
+  }
+}
+
+// desktop
 
 @media (min-width: 1280px) {
   .movie-wrapper {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1280px;
   }
   .movie-wrapper__info {
