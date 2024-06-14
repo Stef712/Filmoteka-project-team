@@ -133,6 +133,8 @@ body.darkmode {
 .theme-switch-wrapper {
   display: flex;
   align-items: flex-start;
+  max-width: 100%;
+
 }
 .theme-switch .theme-icon {
   display: none;
@@ -209,8 +211,6 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
-  justify-content: center;
-
 }
 
 .slider.round:before {
