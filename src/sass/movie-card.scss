@@ -54,7 +54,6 @@
   cursor: pointer;
   transition: border 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
-  width: 280px;
   height: auto;
   position: relative;
   background-color: #fff;
@@ -119,13 +118,14 @@
     line-height: 16px;
   }
   .movie-wrapper__card-img img {
-    width: 336px;
     height: auto;
+    width: auto;
+    max-width: 100%;
   }
 
   .movie-wrapper__card {
-    width: 336px;
-  }
+    width: auto;
+    max-width: 100%;  }
 }
 
 // desktop
@@ -141,8 +141,9 @@
     line-height: 24px;
   }
   .movie-wrapper__card-img img {
-    width: 295px;
     height: auto;
+    width: auto;
+    max-width: 100%;
   }
 
   .movie-wrapper__card {
