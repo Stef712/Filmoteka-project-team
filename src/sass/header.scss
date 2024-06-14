@@ -173,7 +173,6 @@ div a {
     padding: 20px 20px;
   }
   .header-home {
-    background-image: url('./images/background-header-2x-t.png');
     justify-content: space-between;
     max-height: 460px;
     width: 100%;
@@ -188,18 +187,17 @@ div a {
 
   .site-navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 5px;
+    gap: 15px;
   }
   .site-nav-list {
     flex-direction: column;
     gap: 30px;
   }
-  .search-form{
-    align-items: flex-start;
-    align-self: center;
-    margin-top: 150px;
+  
+  .search-form-input{
+    align-self: flex-start;
   }
 }
 
