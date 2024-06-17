@@ -8,6 +8,7 @@
   --background-color-dark: #000000;
   --text-color-light: #000000;
   --text-color-dark: #ffffff;
+  --border-hover-color: #b92f2c;
 }
 .container {
   display: flex;
@@ -15,8 +16,8 @@
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 32px;
   height: 100%;
-  background-color: #fff;
 }
 
 .queue,
@@ -29,7 +30,7 @@
   margin: 0 auto;
   padding: 32px;
   height: 100%;
-  background-color: #fff;
+
   margin: 0 auto;
   justify-content: center;
   align-content: center;
@@ -40,9 +41,8 @@
   grid-template-columns: 1fr;
   gap: 20px;
   justify-content: center;
-  padding-top: 20px;
+  padding: 20px;
   background-color: var(--background-color-light);
-  background-color: #fff;
 }
 
 .movie-wrapper__card {
@@ -53,16 +53,15 @@
   cursor: pointer;
   transition: border 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
+  width: 280px;
   height: auto;
   position: relative;
-  background-color: #fff;
+  // background-color: #f5e8e8;
 }
 
 .movie-wrapper__card:hover {
-  border: 1px solid var(--border-hover-color);
-  box-shadow: 0 6px 22px var(--border-hover-color);
   scale: 1.02;
-  background-color: #fff;
+  // background-color: #f5e8e8;
 }
 
 .movie-wrapper__card-img img {
@@ -103,38 +102,41 @@
   top: 5%;
 }
 
-// mobile
+@media (max-width: 320px) {
+  .movie-wrapper__card {
+    width: 240px;
+    padding: 0;
+  }
+  .movie-wrapper__card-img {
+    width: 100%;
+  }
+}
 
-//  tablet
-@media screen and (768px <= width <= 1279px ){
+@media (min-width: 768px) {
   .movie-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1279px;
-  }
-  .movie-wrapper__info {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
+    gap: 30px;
   }
   .movie-wrapper__card-img img {
-    height: auto;
-    width: auto;
-    max-width: 100%;
+    width: 336px;
+    height: 455px;
   }
 
   .movie-wrapper__card {
-    width: auto;
-    max-width: 100%;  }
+    width: 336px;
+  }
+  .queue,
+  .watched {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 30px;
+  }
 }
-
-// desktop
 
 @media (min-width: 1280px) {
   .movie-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1280px;
   }
   .movie-wrapper__info {
     font-size: 20px;
@@ -142,12 +144,13 @@
     line-height: 24px;
   }
   .movie-wrapper__card-img img {
+    width: 295px;
     height: auto;
-    width: auto;
-    max-width: 100%;
   }
 
-
+  .movie-wrapper__card {
+    width: 295px;
+  }
   .queue,
   .watched {
     grid-template-columns: repeat(4, 1fr);

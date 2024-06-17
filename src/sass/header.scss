@@ -12,6 +12,12 @@ div a {
   text-decoration: none;
 }
 
+.header__container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .watched-queue-container .site-nav-button {
   display: none;
 }
@@ -27,8 +33,19 @@ div a {
   background-color: rgb(0, 0, 0, 0.8);
   overflow: hidden;
   border-radius: 10px;
-  margin-left: 120px;
+  animation: backgroundTransition 3s infinite normal;
 }
+
+.header-home {
+  animation: backgroundTransition 15s infinite;
+  perspective: 1000px;
+}
+
+.header-home {
+  animation: backgroundTransition 15s infinite;
+  perspective: 1000px;
+}
+
 .header-content-container {
   position: relative;
   display: flex;
@@ -80,7 +97,6 @@ div a {
   background-color: #000;
   border: 1px solid #fff;
   color: #b92f2c;
-  text-decoration: underline;
 }
 
 .watched-queue-container {

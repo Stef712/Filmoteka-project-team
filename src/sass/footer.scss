@@ -76,9 +76,9 @@ footer {
   left: 50%;
   width: 80%;
   transform: translate(-50%, -50%);
-  max-height: 80vh;
+  max-height: 100vh;
   max-width: 600px;
-  background: rgba(32, 32, 32, 0.7);
+  background: linear-gradient(to bottom, black, white);
 
   color: white;
   overflow: hidden;
@@ -115,7 +115,6 @@ footer {
   padding: 0;
 }
 .member-section {
-  background-color: rgba(51, 45, 45, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,14 +142,14 @@ footer {
 }
 .member-section:hover {
   background-color: rgb(255, 255, 255, 0.9);
-  color: #080808;
+  color: #b92f2c;
 }
 .member-section:hover .member-description,
 .member-section:hover .member-name {
-  color: #080808;
+  color: #b92f2c;
 }
 .member-section:hover .social-links a {
-  fill: #080808;
+  fill: #b92f2c;
 }
 .member-links svg {
   width: 30px;
@@ -167,12 +166,10 @@ footer {
   fill: black;
 }
 .member-section {
-  /* stiluri existente */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .member-section:hover {
-  box-shadow: 0 0 15px 10px rgba(185, 47, 44, 0.5);
   transform: scale(1.05);
 }
 
@@ -201,4 +198,66 @@ footer {
   right: -400%;
 }
 
-// responsive
+@media (max-width: 500px) {
+  .footer-modal-content {
+    width: 90%;
+  }
+  .member-section {
+    padding: 0;
+  }
+  .member-name {
+    font-size: 12px;
+  }
+  .member-description {
+    font-size: 12px;
+  }
+  .member-name {
+    margin: 0;
+  }
+  .member-description {
+    line-height: 50%;
+  }
+
+  .footer-container {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .group-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .title-btn-container {
+    margin-bottom: 50px;
+  }
+  .footer-modal-title {
+    font-size: 28px;
+  }
+  .footer-modal-content {
+    max-width: 800px;
+    // height: 500px;
+  }
+  .member-section {
+    height: auto;
+  }
+  .member-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .group-section {
+    gap: 30px;
+  }
+
+  .footer-modal-content {
+    max-width: 1000px;
+  }
+}
